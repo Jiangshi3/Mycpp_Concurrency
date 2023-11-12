@@ -1,7 +1,9 @@
 
 #include <iostream>
 #include <chrono>
-#include <mingw.thread.h>  //在我的windows中
+#include <thread>
+//#include <mingw.thread.h>  //在我的windows中
+
 
 using namespace std::chrono;
 using namespace std;
