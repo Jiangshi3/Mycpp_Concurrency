@@ -45,8 +45,9 @@ namespace s2{
         thread th(A()); 
         它会被解释为一个函数声明而不是一个对象的初始化。为了避免这个问题，可以使用额外的括号来明确指定它是一个对象的初始化而不是函数声明;
         */
-        //thread th((A()));    
-        //thread th(std::move(A()));
+        //thread th( (A()) );    
+        //thread th( std::move(A()) );
+        // thread th{ A() };
         if(th.joinable()){
             th.join();
         }
